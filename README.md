@@ -1,3 +1,3 @@
 # GameDev
 Unity and Blender game
-# Theme: A lucky day
+# Theme: A lucky journey

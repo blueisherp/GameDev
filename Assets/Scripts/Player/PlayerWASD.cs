@@ -8,14 +8,14 @@ public class PlayerWASD : MonoBehaviour
 	public float speed = 5f;
 	public float turnSmoothing = 15f;
 	private Rigidbody rb;
-	// NavMeshAgent ag;
+	private Animator anim;
 
 	Vector3 movement;
 
 	// Use this for initialization
 	void Awake () {
 		rb = GetComponent<Rigidbody> ();	
-	//	ag = GetComponent<NavMeshAgent> ();
+		anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate()
@@ -35,7 +35,14 @@ public class PlayerWASD : MonoBehaviour
 
 		if (h != 0 || v != 0) 
 		{
+			// Player is moving
 			Rotating (h, v);
+			anim.SetFloat("Speed", 5f, speed, Time.deltaTime);
+		}
+		else
+		{
+			// Player is not moving
+			anim.SetFloat("Speed", 0);
 		}
 	}
 

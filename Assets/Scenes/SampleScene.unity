@@ -1594,12 +1594,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.47372
+      value: 0.14504
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.9938
+      value: 2.9725
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
@@ -1644,17 +1644,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.70016
+      value: 1.0234939
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8375
+      value: 1.2242575
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 625549687e209ea498ae617721ab6dcb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8125
+      value: 1.1877124
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625549687e209ea498ae617721ab6dcb, type: 3}
@@ -1690,8 +1690,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSmoothing: 15
---- !u!65 &2056833643
-BoxCollider:
+--- !u!136 &2056833643
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1700,9 +1700,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.48629475, y: 2.001811, z: 0.39858937}
-  m_Center: {x: -0.0062646866, y: 0.9767661, z: 0.00000011920929}
+  m_Radius: 0.23
+  m_Height: 2.14
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.06, z: 0}
 --- !u!54 &2056833644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1717,7 +1718,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &2056833645 stripped
 Transform:

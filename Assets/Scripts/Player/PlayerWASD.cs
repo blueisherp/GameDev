@@ -37,12 +37,12 @@ public class PlayerWASD : MonoBehaviour
 		{
 			// Player is moving
 			Rotating (h, v);
-			anim.SetFloat("Speed", 5f, speed, Time.deltaTime);
+			anim.SetFloat("PlayerSpeed", 5f, speed, Time.deltaTime);
 		}
 		else
 		{
 			// Player is not moving
-			anim.SetFloat("Speed", 0);
+			anim.SetFloat("PlayerSpeed", 0f);
 		}
 	}
 
